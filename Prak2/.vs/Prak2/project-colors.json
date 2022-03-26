@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Прочие файлы",
+      "ColorIndex": -1
+    },
+    "85fe7306-7e00-4e8f-83f8-ff2f0aab0a24": {
+      "ProjectGuid": "85fe7306-7e00-4e8f-83f8-ff2f0aab0a24",
+      "DisplayName": "Prak2",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
