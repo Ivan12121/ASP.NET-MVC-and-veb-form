@@ -105,15 +105,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\CreateCustomersController.cs" />
-    <Compile Include="Controllers\CreateOrdersController.cs" />
-    <Compile Include="Controllers\DeleteCustomersController.cs" />
-    <Compile Include="Controllers\DeleteOrdersController.cs" />
-    <Compile Include="Controllers\EditCustomersController.cs" />
-    <Compile Include="Controllers\EditOrdersController.cs" />
+    <Compile Include="Controllers\CreateStringTableController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\ShowCustomersController.cs" />
-    <Compile Include="Controllers\ShowOrdersController.cs" />
+    <Compile Include="Controllers\ShowDataBaseTableController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -127,15 +121,19 @@
     <None Include="packages.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\ShowCustomersDataBase\CustomersDataBase.cshtml" />
     <Content Include="Views\Home\Action.cshtml" />
-    <Content Include="Views\ShowOrders\OrdersDataBase.cshtml" />
-    <Content Include="Views\EditCustomers\EditCustomers.cshtml" />
-    <Content Include="Views\CreateCustomers\Create.cshtml" />
-    <Content Include="Views\CreateOrders\CreateOrder.cshtml" />
-    <Content Include="Views\DeleteCustomers\DeleteCustomers.cshtml" />
-    <Content Include="Views\DeleteOrders\DeleteOrders.cshtml" />
-    <Content Include="Views\EditOrders\EditOrders.cshtml" />
+    <Content Include="Views\ShowDataBaseTable\CustomersTable.cshtml" />
+    <Content Include="Views\ShowDataBaseTable\OrdersTable.cshtml" />
+    <Content Include="Views\CreateStringTable\CreateCustomers.cshtml" />
+    <Content Include="Views\CreateStringTable\CreateOrder.cshtml" />
+    <Content Include="Views\CreateStringTable\DeleteOrders.cshtml" />
+    <Content Include="Views\CreateStringTable\DeleteCustomers.cshtml" />
+    <Content Include="Views\CreateStringTable\EditCustomers.cshtml" />
+    <Content Include="Views\CreateStringTable\EditOrders.cshtml" />
+    <Content Include="Views\CreateStringTable\InputIdCustomersEdit.cshtml" />
+    <Content Include="Views\CreateStringTable\InputIdOrdersEdit.cshtml" />
+    <Content Include="Views\CreateStringTable\InputIdCustomersDelete.cshtml" />
+    <Content Include="Views\CreateStringTable\InputIdOrdersDelete.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -143,9 +141,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Views\ShowCustomers\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

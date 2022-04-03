@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "DeleteCustomers";
+}
+
+@model prak3AspMVC.Models.Customers
+<h2>Удаление Customers</h2>
+<dl>
+    <dt>Данные</dt>
+    <dd>
+        @Html.DisplayFor(mod => mod.Name)
+    </dd>
+
+    <dt>Автор</dt>
+    <dd>
+        @Html.DisplayFor(mod => mod.phoneNumber)
+    </dd>
+
+    <dt>Цена</dt>
+    <dd>
+        @Html.DisplayFor(mod => mod.Id_orders)
+    </dd>
+</dl>
+
+@using (Html.BeginForm())
+{
+    <input type="submit" value="Удалить" />
+}
+

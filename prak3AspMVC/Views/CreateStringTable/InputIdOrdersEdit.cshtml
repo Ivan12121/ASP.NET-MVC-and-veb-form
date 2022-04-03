@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "InputIdOrdersEdit";
+}
+
+@using (Html.BeginForm("InputIdOrdersEdit", "CreateStringTable", FormMethod.Post))
+{
+    <p>Введите id заказа</p>
+    <input type="text" name="numID" />
+    <button type="submit">Изменить данные</button>
+}
+

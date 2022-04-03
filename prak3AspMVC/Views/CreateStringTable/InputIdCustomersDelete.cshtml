@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "InputIdCustomersDelete";
+}
+
+@using (Html.BeginForm("InputIdCustomersDelete", "CreateStringTable", FormMethod.Post))
+{
+    <p>Введите id покупателя</p>
+    <input type="text" name="numID" />
+    <button type="submit">Удалить данные</button>
+}
+

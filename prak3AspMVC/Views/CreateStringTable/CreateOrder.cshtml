@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "CreateOrder";
+}
+
+@model prak3AspMVC.Models.Orders
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Новый заказ</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(model => model.Name, "Название аппаратуры")
+    <br />
+    @Html.EditorFor(model => model.Name)
+    <br />
+    <br />
+    @Html.LabelFor(model => model.Cost, "Стоимость")
+    <br />
+    @Html.EditorFor(model => model.Cost)
+    <br />
+    <br />
+    <input type="submit" value="Добавить" />
+}
+
