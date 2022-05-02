@@ -1,0 +1,29 @@
+﻿
+@model IEnumerable<prak7MVC.Models.Guests>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div>
+    <h3>Клиенты</h3>
+    <table>
+        <tr class="header">
+            <td><p>Имя</p></td>
+            <td><p>Email</p></td>
+            <td><p></p></td>
+            <td><p>Пойдут?</p></td>
+            <td></td>
+        </tr>
+        @foreach(prak7MVC.Models.Guests b in Model)
+        {
+            <tr>
+                <td><p>@b.name</p></td>
+                <td><p>@b.email</p></td>
+                <td><p></p></td>
+                <td><p>@b.confirm</p></td>
+
+            </tr>
+
+        }
+
+</div>
+
